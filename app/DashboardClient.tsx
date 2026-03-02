@@ -21,10 +21,8 @@ export default function DashboardClient() {
 
   const [statusFilter, setStatusFilter] = useState("");
 
-  // Get filtered data count
   const filteredData = getFilteredData(search, statusFilter);
 
-  // ✅ Ensure totalPages is NEVER 0
   const totalPages = Math.max(
     1,
     Math.ceil(filteredData.length / rowsPerPage)

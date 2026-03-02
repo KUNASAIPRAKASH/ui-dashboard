@@ -12,7 +12,6 @@ export default function TopBar({ search, setSearch }: TopBarProps) {
     <div className="p-4 border-b border-gray-700 bg-[#2a2b31]">
       <div className="flex items-center justify-between">
 
-        {/* Search Input */}
         <div className="flex items-center bg-[#1f2024] border border-gray-600 rounded px-3 h-10">
           <input
             value={search}
@@ -23,7 +22,6 @@ export default function TopBar({ search, setSearch }: TopBarProps) {
           <Filter size={16} className="text-gray-400 ml-2" />
         </div>
 
-        {/* Refresh Button */}
         <button
           onClick={() => setSearch("")}
           className="h-10 w-10 flex items-center justify-center rounded border border-gray-600 bg-[#1f2024] hover:bg-[#232428]"
