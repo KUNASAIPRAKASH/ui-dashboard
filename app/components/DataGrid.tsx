@@ -21,10 +21,8 @@ export default function DataGrid({
 }: DataGridProps) {
   const router = useRouter();
 
-  // Get the same filtered data used elsewhere
   const filteredData = getFilteredData(search, statusFilter);
 
-  // Pagination logic
   const startIndex = (page - 1) * rowsPerPage;
   const paginatedData = filteredData.slice(
     startIndex,

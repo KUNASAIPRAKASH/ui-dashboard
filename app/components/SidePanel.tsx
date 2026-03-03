@@ -30,7 +30,6 @@ export default function SidePanel({
 
   return (
     <div className="flex">
-      {/* Vertical Tabs */}
       <div className="w-20 bg-[#2a2b31] border-l border-gray-700 flex flex-col items-center py-6 gap-8">
         {tabs.map((tab) => (
           <button
@@ -45,7 +44,6 @@ export default function SidePanel({
         ))}
       </div>
 
-      {/* Content Panel */}
       <div className="w-64 bg-[#1e1f24] border-l border-gray-700 p-6">
         {active === "Columns" && (
           <div className="space-y-4">
